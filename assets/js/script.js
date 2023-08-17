@@ -8,11 +8,8 @@ const mainImg = document.getElementById('img-border');
 
 function toggleBorder(){
 
-    if (mainImg.style.border == ""){
-        mainImg.style.border = "2px solid red";
-    } else {
-        mainImg.style.border = "";
-    }
+    mainImg.style.border == "" ? mainImg.style.border = "2px solid red" : mainImg.style.border = "";
+
 }
 
 
@@ -29,6 +26,7 @@ const alertMsj = document.getElementById("alert-msj");
 // Funciones
 
 function sendOrder(){
+
     const total = Number(quantity01.value) + Number(quantity02.value) + Number(quantity03.value);
 
     if ( total > 10) {
